@@ -1,0 +1,92 @@
+.bookmark-body {
+  background-color: #f7ecde;
+  height: 100%;
+}
+.title {
+  position: relative;
+}
+
+.title h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  color: RGB(53, 46, 40);
+  font-weight: 500;
+  padding-top: 4.375rem;
+  padding-bottom: 3.125rem;
+  position: relative;
+  z-index: 11111;
+}
+
+.title .title-bg {
+  width: 265px;
+  height: 20px;
+  position: absolute;
+  background-color: #fec260;
+  top: 110px;
+  transition: height 0.3s ease, top 0.3s ease;
+}
+
+.title:hover .title-bg {
+  height: 35px;
+  top: 95px;
+}
+
+.bookmark-section {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+.bookmark-section h3 {
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+    font-family: "Righteous", sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 500;
+  }
+  .bookmark-section p{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  input::placeholder {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .bookmark-section .btn-submit{
+    background-color: #D1512D;
+    color: aliceblue;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .bookmark-section .btn-submit:hover{
+    background-color: #BB4120;
+  }
+  .table th{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .circles {
+    display: flex;
+  }
+  
+  .circles .rounded-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  #errorBox p{
+    font-family: "Righteous", sans-serif;
+    font-size: 1rem;
+    font-weight:400;
+  }
+  #errorBox li{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }

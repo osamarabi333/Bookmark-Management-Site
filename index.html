@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bookmark-body">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="title">
+          <h1>Bookmarker</h1>
+          <div class="title-bg"></div>
+        </div>
+
+        <div
+          class="bookmark-section w-100 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="pt-3 pb-2">
+            <i class="fa-solid fa-bookmark pe-2"></i>Bookmark your favorite
+            sites <i class="fa-solid fa-bookmark ps-1"></i>
+          </h3>
+          <div
+            class="bookMarkName w-100 d-flex flex-column justify-content-center"
+          >
+            <p class="mb-2">
+              <i class="fa-solid fa-book-bookmark pe-1"></i>Site Name
+            </p>
+            <input
+              class="form-control mb-3"
+              id="bookMarkInput"
+              type="text"
+              placeholder="Bookmark Name"
+            />
+            <!-- oninput="validateInputs(this)"
+            oninput="validateInputs(this)" onclick="addWebSite()" -->
+          </div>
+          <div class="siteUrl w-100 d-flex flex-column justify-content-center">
+            <p class="mb-2"><i class="fa-solid fa-link pe-1"></i>Site URL</p>
+            <input
+              class="form-control mb-3"
+              id="UrlInput"
+              type="text"
+              placeholder="Website URL"
+            />
+          </div>
+          <button id="btn-submit" class="mb-4 mt-3 btn btn-submit px-5">
+            Submit
+          </button>
+        </div>
+        <table class="table mt-4 text-center bg-light">
+          <thead>
+            <th class="text-capitalize">index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+          </thead>
+          <tbody id="tableContent"></tbody>
+        </table>
+      </div>
+      <div
+        class="box-info position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center d-none"
+        id="errorBox"
+      >
+        <div class="box-content bg-white p-4 rounded-2 shadow-lg">
+          <header
+            class="box-header w-100 d-flex justify-content-between align-items-center mb-4"
+          >
+            <div class="circles d-flex">
+              <span class="rounded-circle me-2 bg-danger"></span>
+              <span class="rounded-circle me-2 bg-success"></span>
+              <span class="rounded-circle me-2 bg-secondary"></span>
+            </div>
+            <button class="btn border-0" id="closeBtn">
+              <i class="fa-solid fa-xmark close fs-3"></i>
+            </button>
+          </header>
+          <p class="m-0 pb-2">
+            Site Name or Url is not valid, Please follow the rules below :
+          </p>
+          <ol class="rules list-unstyled m-0">
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>Please enter a site
+              name that starts with an uppercase letter and is followed by 2 to
+              9 lowercase letters.
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i> Please enter a
+              valid URL starting with http://, https://, or ftp://, followed by
+              the domain name (e.g., example.com, www.example.org).
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
